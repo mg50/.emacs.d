@@ -6,7 +6,6 @@
   (end-of-line)) 
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
 
 (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))

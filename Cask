@@ -10,6 +10,7 @@
 (depends-on "find-file-in-project")
 (depends-on "flymake-ruby")
 (depends-on "framemove")
+(depends-on "haml-mode")
 (depends-on "magit")
 (depends-on "pallet")
 (depends-on "powerline")
