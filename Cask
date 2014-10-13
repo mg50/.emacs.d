@@ -7,6 +7,7 @@
 (depends-on "ack")
 (depends-on "autopair")
 (depends-on "better-defaults")
+(depends-on "buffer-move")
 (depends-on "coffee-mode")
 (depends-on "find-file-in-project")
 (depends-on "flymake-ruby")

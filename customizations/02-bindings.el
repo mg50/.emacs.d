@@ -37,6 +37,10 @@
 
 (global-set-key (kbd "M-s t") 'transpose-frame)
 
+(global-set-key (kbd "<C-S-up>")     'buf-move-up)
+(global-set-key (kbd "<C-S-down>")   'buf-move-down)
+(global-set-key (kbd "<C-S-left>")   'buf-move-left)
+(global-set-key (kbd "<C-S-right>")  'buf-move-right)
 
 (add-hook 'term-mode-hook (lambda ()
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))
