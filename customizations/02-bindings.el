@@ -31,6 +31,8 @@
 (global-set-key (kbd "ESC <right>") 'next-buffer)
 (global-set-key (kbd "ESC <left>") 'previous-buffer)
 
+(global-set-key (kbd "C-x C-m") 'windresize)
+
 
 (add-hook 'term-mode-hook (lambda ()
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))

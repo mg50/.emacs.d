@@ -25,3 +25,7 @@
 (flymake-mode)
 
 (electric-indent-mode)
+(load-theme 'monokai t)
+
+(powerline-default-theme)
+(setq confirm-nonexistent-file-or-buffer nil)
