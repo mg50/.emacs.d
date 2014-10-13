@@ -35,6 +35,8 @@
 
 (global-set-key (kbd "M-g") 'goto-line)
 
+(global-set-key (kbd "M-s t") 'transpose-frame)
+
 
 (add-hook 'term-mode-hook (lambda ()
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))

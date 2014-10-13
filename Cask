@@ -19,6 +19,7 @@
 (depends-on "powerline" :git "https://github.com/unic0rn/powerline.git")
 (depends-on "ruby-mode")
 (depends-on "smex")
+(depends-on "transpose-frame" :git "https://github.com/emacsmirror/transpose-frame.git")
 (depends-on "whole-line-or-region")
 (depends-on "windresize")
 (depends-on "undo-tree")
