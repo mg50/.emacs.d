@@ -33,6 +33,8 @@
 
 (global-set-key (kbd "C-x C-m") 'windresize)
 
+(global-set-key (kbd "M-g") 'goto-line)
+
 
 (add-hook 'term-mode-hook (lambda ()
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))
