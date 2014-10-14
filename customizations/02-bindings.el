@@ -14,7 +14,6 @@
 (global-set-key (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 (global-set-key (kbd "C-c C-k") 'kill-this-buffer)
-(global-set-key (kbd "C-c C-t") 'ansi-term)
 
 (global-set-key (kbd "M-v") 'cua-scroll-down)
 (global-set-key (kbd "C-v") 'cua-scroll-up)
@@ -37,12 +36,21 @@
 
 (global-set-key (kbd "M-s t") 'transpose-frame)
 
-(global-set-key (kbd "<C-S-up>")     'buf-move-up)
-(global-set-key (kbd "<C-S-down>")   'buf-move-down)
-(global-set-key (kbd "<C-S-left>")   'buf-move-left)
-(global-set-key (kbd "<C-S-right>")  'buf-move-right)
+(global-set-key (kbd "<C-S-up>")    'buf-move-up)
+(global-set-key (kbd "<C-S-down>")  'buf-move-down)
+(global-set-key (kbd "<C-S-left>")  'buf-move-left)
+(global-set-key (kbd "<C-S-right>") 'buf-move-right)
 
+(global-set-key (kbd "C-c C-r") 'rename-file-and-buffer)
+(global-set-key (kbd "C-M-v") 'revert-buffer)
+
+(global-set-key (kbd "C-c a") 'align-regexp)
+
+(define-key global-map (kbd "C-c C-t") 'ansi-term)
 (add-hook 'term-mode-hook (lambda ()
+                            (define-key term-raw-map (kbd "M-v") 'cua-scroll-down)
+                            (define-key term-raw-map (kbd "C-v") 'cua-scroll-up)
+                            (define-key term-raw-map (kbd "M-x") 'smex)
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))
 
 (windmove-default-keybindings)
