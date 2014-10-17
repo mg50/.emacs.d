@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-x C-_") 'comment-or-uncomment-region)
 (global-set-key (kbd "M-RET") 'cua-set-rectangle-mark)
 (global-set-key (kbd "C-c g") 'magit-status)
+
 (global-set-key (kbd "M-x") 'smex)
 
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
@@ -30,6 +31,8 @@
 (global-set-key (kbd "ESC <right>") 'next-buffer)
 (global-set-key (kbd "ESC <left>") 'previous-buffer)
 
+(global-set-key (kbd "C-M-y") 'yank)
+
 (global-set-key (kbd "C-x C-m") 'windresize)
 
 (global-set-key (kbd "M-g") 'goto-line)
@@ -48,8 +51,8 @@
 
 (define-key global-map (kbd "C-c C-t") 'ansi-term)
 (add-hook 'term-mode-hook (lambda ()
-                            (define-key term-raw-map (kbd "M-v") 'cua-scroll-down)
                             (define-key term-raw-map (kbd "C-v") 'cua-scroll-up)
+                            (define-key term-raw-map (kbd "M-v") 'cua-scroll-down)
                             (define-key term-raw-map (kbd "M-x") 'smex)
                             (define-key term-raw-map (kbd "C-z") 'suspend-frame)))
 

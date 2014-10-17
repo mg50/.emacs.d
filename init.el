@@ -15,7 +15,9 @@
  '(custom-safe-themes (quote ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "57f8801351e8b7677923c9fe547f7e19f38c99b80d68c34da6fa9b94dc6d3297" default)))
  '(flymake-gui-warnings-enabled nil)
  '(js-indent-level 2)
- '(magit-use-overlays nil))
+ '(magit-diff-use-overlays nil)
+ '(magit-use-overlays nil)
+ '(whole-line-or-region-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
