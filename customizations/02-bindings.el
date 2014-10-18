@@ -37,7 +37,7 @@
 
 (global-set-key (kbd "M-g") 'goto-line)
 
-(global-set-key (kbd "M-s t") 'transpose-frame)
+(global-set-key (kbd "M-s M-t") 'transpose-frame)
 
 (global-set-key (kbd "<C-S-up>")    'buf-move-up)
 (global-set-key (kbd "<C-S-down>")  'buf-move-down)
