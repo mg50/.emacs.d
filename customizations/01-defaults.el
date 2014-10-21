@@ -24,7 +24,7 @@
 
 (flymake-mode)
 
-(electric-indent-mode)
+(electric-pair-mode)
 (load-theme 'monokai t)
 
 (powerline-default-theme)

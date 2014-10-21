@@ -6,7 +6,6 @@
 (depends-on "ace-jump-mode")
 (depends-on "ack")
 (depends-on "auto-complete")
-(depends-on "autopair")
 (depends-on "better-defaults")
 (depends-on "buffer-move")
 (depends-on "cider")
