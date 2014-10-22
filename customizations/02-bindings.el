@@ -47,7 +47,7 @@
 (global-set-key (kbd "C-c C-r") 'rename-file-and-buffer)
 (global-set-key (kbd "C-M-v") 'revert-buffer)
 
-(global-set-key (kbd "C-c a") 'align-regexp)
+(global-set-key (kbd "C-c C-a") 'align-regexp)
 
 (define-key global-map (kbd "C-c C-t") 'ansi-term)
 (add-hook 'term-mode-hook (lambda ()
