@@ -11,6 +11,7 @@
 (depends-on "cider")
 (depends-on "clojure-mode")
 (depends-on "coffee-mode")
+(depends-on "elm-mode")
 (depends-on "feature-mode")
 (depends-on "find-file-in-project")
 (depends-on "flymake-ruby")

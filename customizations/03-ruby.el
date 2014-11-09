@@ -1,9 +1,9 @@
-(defun ruby-insert-end () 
-  "Insert \"end\" at point and reindent current line." 
-  (interactive) 
-  (insert "end") 
-  (ruby-indent-line t) 
-  (end-of-line)) 
+(defun ruby-insert-end ()
+  "Insert \"end\" at point and reindent current line."
+  (interactive)
+  (insert "end")
+  (ruby-indent-line t)
+  (end-of-line))
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 
@@ -18,3 +18,9 @@
 (add-to-list 'auto-mode-alist '("\\.erb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
+
+(defun ruby-electric-indent-function (char)
+  (if (eq major-mode 'ruby-mode)
+      (if (char-equal char ?d)
+          (string-equal "end" (buffer-substring (max 1 (- (point) 3)) (point))))))
+(add-hook 'electric-indent-functions 'ruby-electric-indent-function)

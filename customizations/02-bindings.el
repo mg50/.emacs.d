@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-x C-_") 'comment-or-uncomment-region)
 (global-set-key (kbd "M-RET") 'cua-set-rectangle-mark)
 (global-set-key (kbd "C-c g") 'magit-status)
+(global-set-key (kbd "RET") 'newline-and-indent)
 
 (global-set-key (kbd "M-x") 'smex)
 
