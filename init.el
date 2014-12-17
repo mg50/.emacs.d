@@ -16,10 +16,26 @@
    (quote
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "57f8801351e8b7677923c9fe547f7e19f38c99b80d68c34da6fa9b94dc6d3297" default)))
  '(electric-indent-mode t)
+ '(elm-indent-after-keywords
+   (quote
+    (("where" 0)
+     ("of" 2)
+     ("do" 2)
+     ("mdo" 2)
+     ("rec" 2)
+     ("in" 2 0)
+     ("{" 2)
+     "if" "then" "else" "let")))
+ '(elm-indent-offset 2)
+ '(elm-indentation-where-post-offset 0)
+ '(elm-indentation-where-pre-offset 0)
  '(flymake-gui-warnings-enabled nil)
  '(js-indent-level 2)
  '(magit-diff-use-overlays nil)
  '(magit-use-overlays nil)
+ '(purescript-mode-hook
+   (quote
+    (turn-on-purescript-indent turn-on-purescript-indentation)))
  '(whole-line-or-region-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
