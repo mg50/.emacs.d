@@ -12,3 +12,10 @@
           (rename-buffer new-name)
           (set-visited-file-name new-name)
           (set-buffer-modified-p nil))))))
+
+(defun mark-sexp-right ()
+  (interactive)
+  (mark-sexp)
+  (if (> (mark) (point))
+      (cua-exchange-point-and-mark nil)
+      nil))

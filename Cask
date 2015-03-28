@@ -11,6 +11,7 @@
 (depends-on "cider")
 (depends-on "clojure-mode")
 (depends-on "coffee-mode")
+(depends-on "deferred")
 (depends-on "elm-mode", :git "https://github.com/jcollard/elm-mode.git")
 (depends-on "feature-mode")
 (depends-on "find-file-in-project")
