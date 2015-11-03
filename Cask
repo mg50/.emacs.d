@@ -28,6 +28,7 @@
 (depends-on "purescript-mode")
 (depends-on "rainbow-delimiters")
 (depends-on "ruby-mode")
+(depends-on "rust-mode")
 (depends-on "smex")
 (depends-on "transpose-frame" :git "https://github.com/emacsmirror/transpose-frame.git")
 (depends-on "whole-line-or-region")
