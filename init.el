@@ -37,12 +37,13 @@
  '(purescript-mode-hook
    (quote
     (turn-on-purescript-indent turn-on-purescript-indentation)))
- '(rust-indent-offset 2)
+ '(rust-indent-offset 4)
  '(whole-line-or-region-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(flymake-warnline ((t nil))))
+ '(flymake-warnline ((t nil)))
+ '(vertical-border ((t (:foreground "color-242")))))
 (put 'narrow-to-region 'disabled nil)
