@@ -1,3 +1,10 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 (require 'pallet)
@@ -16,6 +23,7 @@
     ("let" "when-let" "when-some" "if-let" "if-some" "binding" "loop" "doseq" "for" "with-open" "with-local-vars" "with-redefs" "cmd")))
  '(clojure-defun-indents (quote (context describe it)))
  '(coffee-tab-width 2)
+ '(css-indent-offset 2)
  '(cua-enable-cua-keys nil)
  '(custom-safe-themes
    (quote
