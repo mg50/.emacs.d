@@ -34,3 +34,5 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (push ".ibc" completion-ignored-extensions)
+
+(ido-mode)
