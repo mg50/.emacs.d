@@ -10,7 +10,7 @@
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
-(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 (global-set-key (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
@@ -20,7 +20,9 @@
 (global-set-key (kbd "M-v") 'cua-scroll-down)
 (global-set-key (kbd "C-v") 'cua-scroll-up)
 
-(global-set-key (kbd "C-x f") 'find-file-in-project)
+
+(global-set-key (kbd "C-x f") 'helm-projectile)
+;(global-set-key (kbd "C-x f") 'find-file-in-project)
 
 (global-set-key (kbd "C-b") 'indent-line-and-newline-up)
 (global-set-key (kbd "C-f") 'indent-line-and-newline-down)

@@ -5,9 +5,11 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(require 'cask "~/.cask/cask.el")
+;; (require 'cask "~/.cask/cask.el")
+(require 'cask "~/.emacs.d/.cask/26.2/elpa/cask-20181107.942/cask.el")
 (cask-initialize)
-(require 'pallet)
+;; (require 'pallet)
+;; (pallet-mode t)
 
 (mapc 'load (directory-files "~/.emacs.d/customizations" t "^[0-9]+.*\.el$"))
 
@@ -47,6 +49,9 @@
  '(jsx-indent-level 2)
  '(magit-diff-use-overlays nil)
  '(magit-use-overlays nil)
+ '(projectile-globally-ignored-directories
+   (quote
+    (".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "node_modules")))
  '(purescript-mode-hook
    (quote
     (turn-on-purescript-indent turn-on-purescript-indentation)))
@@ -57,7 +62,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(flymake-warnline ((t nil)))
+ '(flymake-warnline ((t nil)) t)
  '(vertical-border ((t (:foreground "color-242")))))
 (put 'narrow-to-region 'disabled nil)
 (put 'downcase-region 'disabled nil)

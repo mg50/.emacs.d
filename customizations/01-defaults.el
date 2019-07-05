@@ -22,7 +22,7 @@
   (backward-delete-char 1)
   (move-end-of-line 1))
 
-(flymake-mode)
+; (flymake-mode)
 
 (electric-pair-mode)
 (load-theme 'monokai t)
