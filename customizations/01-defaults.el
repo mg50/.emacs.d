@@ -23,6 +23,7 @@
   (move-end-of-line 1))
 
 ; (flymake-mode)
+(menu-bar-mode -1)
 
 (electric-pair-mode)
 (load-theme 'monokai t)
