@@ -19,3 +19,5 @@
   (if (> (mark) (point))
       (cua-exchange-point-and-mark nil)
       nil))
+
+(global-undo-tree-mode 1)
