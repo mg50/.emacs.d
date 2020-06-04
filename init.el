@@ -6,7 +6,7 @@
 (package-initialize)
 
 ;; (require 'cask "~/.cask/cask.el")
-(require 'cask "~/.emacs.d/.cask/26.2/elpa/cask-20181107.942/cask.el")
+(require 'cask "~/.emacs.d/.cask/26.3/elpa/cask-20191004.1155/cask.el")
 (cask-initialize)
 ;; (require 'pallet)
 ;; (pallet-mode t)
@@ -49,12 +49,13 @@
  '(jsx-indent-level 2)
  '(magit-diff-use-overlays nil)
  '(magit-use-overlays nil)
+ '(package-selected-packages (quote (ansi shut-up package-build git epl commander)))
  '(projectile-globally-ignored-directories
    (quote
     (".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "node_modules")))
  '(purescript-mode-hook
    (quote
-    (turn-on-purescript-indent turn-on-purescript-indentation)))
+    (turn-on-purescript-indent turn-on-purescript-indentation)) t)
  '(rust-indent-offset 4)
  '(whole-line-or-region-mode t))
 (custom-set-faces

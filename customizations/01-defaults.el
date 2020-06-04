@@ -3,6 +3,11 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(defun pbcopy ()
+  (interactive)
+  (let ((deactivate-mark t))
+    (call-process-region (point) (mark) "pbcopy")))
+
 (defun indent-line-and-newline-down ()
   "blah"
   (interactive)

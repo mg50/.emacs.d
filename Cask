@@ -29,6 +29,7 @@
 (depends-on "paredit")
 (depends-on "powerline")
 (depends-on "projectile")
+(depends-on "psc-ide")
 (depends-on "psci-mode" :git "https://github.com/ardumont/emacs-psci.git")
 (depends-on "purescript-mode")
 (depends-on "rainbow-delimiters")
